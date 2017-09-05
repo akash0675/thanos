@@ -17,7 +17,7 @@ var api = new ParseServer({
 var dashboard = new ParseDashboard({
   "apps": [
     {
-      "serverURL": process.env.SERVER_URL || 'ttp://ec2-35-154-123-98.ap-south-1.compute.amazonaws.com/thanos',
+      "serverURL": process.env.SERVER_URL || 'http://ec2-35-154-123-98.ap-south-1.compute.amazonaws.com/thanos',
       "appId": process.env.APP_ID || 'thanostestappid',
       "masterKey": process.env.MASTER_KEY || 'thanostestmasterkey',
       "appName": "thanos"
